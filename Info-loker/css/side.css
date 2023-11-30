@@ -1,0 +1,106 @@
+body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px;
+    padding-left: 10px;
+    color: black;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .close-btn {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 20px;
+    margin-right: 50px;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 16px;
+  }
+  
+  .open-btn {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .open-btn:hover {
+    color: #111;
+  }
+  
+   /* Reset default margin and padding */
+ * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+/* Style for the navigation bar */
+nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+}
+
+li {
+    margin-right: 23px;
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}   
+.fa-user{
+    font-size: 25px;
+}
+.card {
+    background-color: #ababab;
+    border: 1px ;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 4px;
+    flex-direction: column;
+}
